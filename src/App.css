@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    width: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header{
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.first-component-container{
+    margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first-component-container span{
+    font-size: 25px;
+}
+
+.IncomeExpense-Container{
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3)
+}
+
+.Income,.Expense{
+    width: 50%;
+    text-align: center;
+}
+
+.Income {
+    border-right: 1px solid black
+}
+.Income span{
+    font-size: 20px;
+    color: rgb(43, 155, 43);
+}
+
+.Expense span{
+    font-size: 20px;
+    color: rgb(198, 23, 23);
+}
+.Expense div, .Income div{
+    font-size: 20px;
+}
+.income--header, .expense--header{
+    color: black;
+}
+
+.HistoryContainer{
+    margin-top: 40px;
+}
+
+.HistoryContainer b, .addTransactionContainer b{
+    font-size: 20px;
+}
+
+.transaction{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3)
+}
+
+.transactionMinus{
+    border-right: 4px solid rgb(198, 23, 23);
+}
+.transactionPlus{
+    border-right: 4px solid rgb(43, 155, 43);
+}
+.textHolder,.priceHolder{
+    margin-top: 15px;
+}
+
+.textHolder input, .priceHolder input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: end;
+}
+
+.addBtn, .clearBtn{
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 10px;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.addBtn{
+    background-color: rgb(144, 69, 214);
+    margin-right: 15px;
+}
+
+.clearBtn{
+    background-color: rgb(220, 60, 60);
 }
